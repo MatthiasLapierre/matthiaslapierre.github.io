@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Open+Sans:400,600,700');
+
+@font-face {
+    font-family: "Feast of Flesh";
+    src: url("../fonts/feast_of_flesh.ttf") format("truetype");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+    border-color: transparent;
+    outline: 0;
+    color: transparent;
+}
+
+img {
+    border: 0;
+}
+
+.clr {
+    clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+p,
+address,
+strong,
+i {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: normal;
+}
+
+.body-back{
+    overflow-x: hidden;
+    background-color: #0D1516;
+}
+
+#loading,
+.load-circle:before {
+    bottom: 0
+}
+
+/* ============================
+            common 
+========================= */
+
+img {
+    max-width: 100%
+}
+
+.section {
+    padding-top: 60px;
+}
+
+@media (max-width:767px) {
+    .section {
+        padding: 60px 0
+    }
+}
+
+.section-title h2 {
+    margin: 0;
+    padding: 0 0 20px;
+    font-weight: 600;
+    font-size: 35px;
+    z-index: 1;
+    color: #151515
+}
+
+.section-title p {
+    margin: 0;
+    font-size: 16px
+}
+
+/* ===============================
+        Header Part css
+==================================*/
+.navcss{
+    margin-top: 0!important;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    transition: all linear .3s;
+}
+.header-nav .navbar-brand img{
+   height: 50px;
+}
+
+.full-screen {
+    min-height: 620px;
+    position: relative;
+}
+
+.home-banner {
+    background-image: url(../images/bg-header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #294B4C;
+    z-index: 99;
+    position: relative;
+}
+
+.home-text-center {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 120%;
+    transform: translateY(-39%);
+}
+
+.home-banner .ban-txt {
+    font-family: "Feast of Flesh", "Bitstream Vera Serif Bold", serif;
+    text-shadow: 3px 3px 3px black; 
+    position: relative;
+    z-index: 1;
+}
+.home-banner h2 {
+     width: 490px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    font-family: "Feast of Flesh", "Berkshire Swash";
+    line-height: 24px;
+   
+}
+.home-banner h5 {
+     width: 490px;
+    font-size: 60px;
+    font-weight: 400;
+    color: #FDCF00;
+    font-family: "Feast of Flesh", "Berkshire Swash";
+    line-height: 24px;
+    margin: 25px 0 50px;
+}
+
+.home-banner p {
+    width: 490px;
+    max-width: 100%;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 18px;
+    padding: 0 0 35px;
+    color: #FDCF00;
+    font-family: "Open Sans";
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black; 
+    line-height: 24px;
+}
+
+.btn-bar a{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: top;
+    text-align: center;
+    line-height: 24px;
+    color: #FFFFFF;
+    font-weight: 400;
+     font-family: "Feast of Flesh", "Berkshire Swash";
+    padding: 12px;
+    border-radius: 35px;
+    width: 155px;
+    height: 48px;
+    -webkit-transition: ease all .5s;
+    -moz-transition: ease all .5s;
+    -o-transition: ease all .5s;
+    transition: ease all .5s;
+    background: #FF9100;
+    
+}
+.btn-bar a:hover{
+    box-shadow: 0px 0px 40px 4px rgba(249, 220, 4, .3);
+    -webkit-box-shadow: 0px 0px 40px 4px rgba(249, 220, 4, .3);
+    -moz-box-shadow: 0px 0px 40px 4px rgba(249, 220, 4, .3);
+    -o-box-shadow: 0px 0px 40px 4px rgba(249, 220, 4, .3);
+}
+.banner-img {
+    position: absolute;
+    left: -30px;
+    bottom: 0;
+}
+
+.banner-img img {
+    position: relative;
+}
+
+/* ===========================================================
+               About us Part
+===============================================================*/
+#aboutus{
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+}
+.aboutus {
+    position: relative;
+}
+
+#aboutus:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    left: -56px;
+    right: 0;
+    top: -10px;
+    height:100%;
+    background: url(../images/about-spider-wev-image.png);
+    background-repeat: no-repeat;
+}
+#aboutus:before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    left: 48%;
+    top: -214px;
+    height: 100%;
+    background: url(../images/title-spider.png);
+    background-repeat: no-repeat;
+}
+.about-party{
+    z-index: 99;
+}
+.about-text p{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 665px;
+    font-size: 15px;
+    color: #fff;
+    line-height: 24px;
+    font-weight: 400;
+     font-family: "Open Sans";
+    z-index: 9;
+}
+
+
+/* ==============================
+      Gallery Part start
+=================================*/
+#gallery{
+    background: url(../images/gallery-background-image.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+#gallery:before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    left: 48%;
+    top: -209px;
+    height: 100%;
+    background: url(../images/title-spider.png);
+    background-repeat: no-repeat;
+}
+.gallery .heading{
+    padding-top: 64px;
+}
+.gallery-padding{
+    padding-left: 0;
+    padding-right: 0;
+        z-index: 99;
+}
+.gallery-overlay{
+    position: relative;
+}
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+    top: 0;
+  background-color: rgba(0, 0, 0, .6);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+.gallery-overlay ul{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.gallery-overlay ul li {
+
+    margin-bottom: 9px;
+}
+.gallery-overlay ul li a {
+    text-align: center;
+    border: 1px solid #FDCF00;
+       display: inline-block;
+    color: #FDCF00;
+    font-size: 16px;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+     -webkit-transition: ease all .5s;
+    -moz-transition: ease all .5s;
+    -o-transition: ease all .5s;
+    transition: ease all .5s;
+}
+.gallery-overlay ul li a:hover {
+    color: #7f479a;
+    background: #FDCF00;
+    border: 1px solid #FDCF00;
+    box-shadow: 0px 0px 40px 4px rgba(249, 220, 4, .2);
+    -webkit-box-shadow: 0px 0px 40px 4px rgba(249, 220, 4, .2);
+    -moz-box-shadow: 0px 0px 40px 4px rgba(249, 220, 4, .2);
+    -o-box-shadow: 0px 0px 40px 4px rgba(249, 220, 4, .2);
+}
+.gallery-overlay:hover .overlay {
+  bottom: 0;
+  height: 100%;
+    cursor: crosshair;
+}
+
+.gallery-img h2{
+    font-size: 20px;
+    color: #FDCF00;
+    line-height: 24px;
+    font-weight: 400;
+     font-family: "Berkshire Swash";
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    z-index: 9;
+}
+
+/* ==============================
+      Install Part start
+=================================*/
+
+#install {
+    padding-bottom: 80px;
+}
+
+
+/*=====================================
+ Start of Footer Part Css
+=======================================*/
+
+#footer {
+    background-color: #2c0047;
+    padding: 20px 0;
+    border-top: 0.3px solid #6c4d7f; 
+   z-index: -9;
+}
+.footer_text {
+    color: #FDCF00;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+     font-family: "Open Sans";
+}
+
+/*=====================================
+ End of Footer Part Css
+=======================================*/
+
+/* === BACK TO TOP CSS == */
+
+#back-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #FDCF00;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+    display: none;
+    -webkit-transition: ease all .5s;
+    -moz-transition: ease all .5s;
+    -o-transition: ease all .5s;
+    transition: ease all .5s;
+    z-index: 999;
+}
+
+#back-top-btn img {
+    margin: 0;
+    position: relative;
+    left: 9px;
+    top: 10px;
+    -webkit-transition: ease all .5s;
+    -moz-transition: ease all .5s;
+    -o-transition: ease all .5s;
+    transition: ease all .5s;
+}
+
+#back-top-btn:hover img{
+    color: #2c0047;
+    top: 7px;
+}
+#back-top-btn:hover{
+    box-shadow: 0px 0px 40px 4px rgba(249, 220, 4, .3);
+    -webkit-box-shadow: 0px 0px 40px 4px rgba(249, 220, 4, .3);
+    -moz-box-shadow: 0px 0px 40px 4px rgba(249, 220, 4, .3);
+    -o-box-shadow: 0px 0px 40px 4px rgba(249, 220, 4, .3);
+}
+
+/* =========== Preloader ============ */
+
+#musa-loader {
+   	background: -webkit-linear-gradient(to top, #1B3236 0%, #0D1516 80%);
+	background: -moz-linear-gradient(to top, #1B3236 0%, #0D1516 80%);
+	background: -ms-linear-gradient(to top, #1B3236 0%, #0D1516 80%);
+	background: -o-linear-gradient(top, #1B3236 0%, #0D1516 80%);
+	background: linear-gradient(to top, #1B3236 0%, #0D1516 80%);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    margin-top: 0;
+    top: 0
+}
+
+#loading-center {
+    width: 100%;
+    height: 100%;
+    position: relative
+}
+
+#loading-center-absolute {
+    position: absolute;
+    left: 49%;
+    top: 45%;
+    height: 100px;
+    width: 300px;
+    transform: translate(-50%,-50%);
+}
+
+
+/*======== sound system controller ============*/
+
+/* SOUND BUTTON CSS */
+#jingle_bell{
+    position: relative;
+}
+.sound_toggle_btn {
+    display: inline-block;
+    cursor: pointer;
+}
+.menu-nav{
+    position: relative;
+}
+.switch {
+    padding: 4px 8px;
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    z-index: 2000;
+    border-radius: 5px;
+}
+
+.sound_toggle_btn span {
+    line-height: 34px;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 14px;
+    color: #FFFFFF;
+    background: #FDCF00;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.17);
+
+}
+.sound_toggle_btn span:hover {
+    box-shadow: 0px 0px 40px 4px rgba(249, 220, 4, .2);
+    -webkit-box-shadow: 0px 0px 40px 4px rgba(249, 220, 4, .2);
+    -moz-box-shadow: 0px 0px 40px 4px rgba(249, 220, 4, .2);
+    -o-box-shadow: 0px 0px 40px 4px rgba(249, 220, 4, .2);
+}
+.fa-play:before {
+    content: "\f04b";
+    font-size: 18px!important;
+    padding-left: 4px;
+}
