@@ -25,14 +25,6 @@ $(function () {
     $('#musa-loader').delay(1500).fadeOut(500);
    
 
-    // this is for back to top js
-    var bc2top = $('#back-top-btn');
-    bc2top.on('click', function () {
-        html_body.animate({
-            scrollTop: 0
-        }, 1500);
-    });
-
     // Closes responsive menu when a scroll link is clicked
     $('.nav-link').on('click', function () {
         $('.navbar-collapse').collapse('hide');

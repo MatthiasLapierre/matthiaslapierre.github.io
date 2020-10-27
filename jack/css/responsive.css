@@ -50,6 +50,7 @@
     .home-banner h5 {
         font-size: 40px;
         margin: 25px 0 40px;
+        width: 360px;
     }
 
     .home-banner p {
@@ -130,7 +131,7 @@
 
 @media (min-width: 320px) and (max-width: 575px) {
     .home-banner h5 {
-        font-size: 35px;
+        font-size: 45px;
         margin: 25px 0 27px;
     }
 
