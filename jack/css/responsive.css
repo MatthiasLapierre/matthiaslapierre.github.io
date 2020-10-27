@@ -68,9 +68,6 @@
     .header-nav .navbar-nav > li {
         margin: 10px 0;
     }
-    .switch {
-        right: 6%;
-    }
 
     .header-nav .navbar-nav .nav-link.active:after,
     .header-nav .navbar-nav .nav-item:after,
@@ -86,7 +83,11 @@
         top: 53%;
         left: 50%;
         transform: translate(-50%, -50%);
+        width: 100%;
     }
+    .home-banner h5, .home-banner p {
+         width: auto;
+     }
 
     #aboutus::before {
         left: 45%;
@@ -126,12 +127,11 @@
 @media (min-width: 320px) and (max-width: 575px) {
     .home-banner h5 {
         font-size: 45px;
-        margin: 25px 0 27px;
+        margin: 25px 0;
     }
 
     .home-banner .ban-txt {
         font-family: "Feast of Flesh", "Bitstream Vera Serif Bold", serif;
-        padding-left: 7px;
     }
 
     .heading {
