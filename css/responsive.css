@@ -3,6 +3,10 @@
 
 /* Tablet Layout: 768px. */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .welcome-text h1.ah-headline {
+        font-size: 45px;
+    }
+
     .section-padding {
         padding: 35px 0;
     }
@@ -96,7 +100,7 @@
     }
 
     .welcome-text h2 {
-        font-size: 2em;
+        font-size: 2em;    
     }
 
     .navbar-nav {
@@ -108,7 +112,7 @@
     }
 
     .welcome-text h1.ah-headline {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .welcome-text h3 {
@@ -182,8 +186,10 @@
 }
 
 
-@media only screen and (min-width: 360px) and (max-width: 767px){
-
+@media only screen and (max-width: 450px){
+    .welcome-text h1.ah-headline {
+        font-size: 16px;
+    }
 
 }
 
