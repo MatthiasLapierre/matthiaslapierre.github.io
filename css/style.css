@@ -75,6 +75,11 @@ img {
     padding: 0;
 }
 
+.coming-soon-text {
+    text-align: center;
+    font-style: italic;
+}
+
 /*---Default css ends---*/
 
 /*-------------- 2. Preloader css starts ---------------*/
@@ -336,11 +341,14 @@ img {
 
 
 .banner-area{
-    background-image: url(../images/home/home-bg.jpg); /*--edit image--*/
+    background-image: url(../images/home/home-bg.jpg);
     background-position: center;
     background-size:cover;
     position: relative;
     height: 100%;
+}
+.banner-area.game {
+    background-image: url(../images/home/game-bg.jpg);
 }
 
 .banner-area::before {
