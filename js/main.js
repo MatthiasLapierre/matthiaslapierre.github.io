@@ -49,9 +49,9 @@ $(document).ready(function () {
 
 	//*********** Animated headline js
 
-	$('.animate-scale').animatedHeadline({
+	/*$('.animate-scale').animatedHeadline({
 		animationType: 'clip'
-	});
+	});*/
 
 	//*** wow js
 
